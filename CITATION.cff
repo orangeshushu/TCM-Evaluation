@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated manuscript and dataset DOI once available."
+title: "TCM-Evaluation"
+authors:
+  - family-names: "Xie"
+    given-names: "Jiacheng"
+  - family-names: "Tang"
+    given-names: "Xiaoting"
+  - family-names: "An"
+    given-names: "Guanghui"
+  - family-names: "Xu"
+    given-names: "Dong"
+repository-code: "https://github.com/orangeshushu/TCM-Evaluation"
+abstract: "Evaluation of large language models against physicians using real-world clinical cases in traditional Chinese medicine."
+keywords:
+  - large language models
+  - traditional Chinese medicine
+  - clinical evaluation
+  - digital medicine

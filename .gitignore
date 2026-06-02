@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Local IDE state
+.idea/
+.vscode/
+
+# Manuscripts and reference PDFs
+*.docx
+*.pdf
+
+# Raw or pre-publication study data
+*.xlsx
+*.xls
+*.csv
+data/
+csv_results/
+csv_results_v2/
+csv_results_summary/
+an_tang_confidence/
+
+# Generated figures and intermediate outputs
+fig_out/
+metric_heatmaps/
+ir_agreement_plots/
+*.png
+*.jpg
+*.jpeg
+*.svg
+!figures/
+!figures/**
+!Figures/
+!Figures/**
+
+# Model-specific pre-publication output folders
+ChatGPT 4o/
+Claude Opus 4/
+DeepSeek/
+Gemini 2.5 Pro/
+GPT-4.1/
+Grok 3/
+Llama 4 Maverick/
+OpenAI o3/
+Qwen3-235B/
+
+# OS files
+.DS_Store
+Thumbs.db
