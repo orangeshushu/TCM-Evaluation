@@ -5,4 +5,7 @@ statsmodels
 matplotlib
 seaborn
 openpyxl
-
+tqdm
+openai
+anthropic
+google-genai

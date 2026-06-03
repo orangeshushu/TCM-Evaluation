@@ -42,6 +42,7 @@ ir_agreement_plots/
 !Figures/**
 
 # Model-specific pre-publication output folders
+outputs/
 ChatGPT 4o/
 Claude Opus 4/
 DeepSeek/

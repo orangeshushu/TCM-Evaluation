@@ -2,7 +2,7 @@
 
 This repository accompanies the manuscript:
 
-**Evaluating large language models against physicians using real-world clinical cases in traditional Chinese medicine**
+**Large Language Models Versus Physicians in Traditional Chinese Medicine: A Real-World Clinical Case Evaluation**
 
 The project evaluates contemporary large language models (LLMs) against a physician comparator cohort in a blinded, expert-scored traditional Chinese medicine (TCM) clinical reasoning task. The benchmark uses de-identified real-world outpatient cases and evaluates the generated diagnostic and therapeutic reports across nine TCM and clinical dimensions.
 
@@ -70,6 +70,7 @@ TCM-Evaluation/
   README.md
   DATA_AVAILABILITY.md
   requirements.txt
+  model_api_calls/
   scripts/
     analysis/
     figures/
@@ -89,6 +90,22 @@ TCM-Evaluation/
 ```
 
 The current working directory contains manuscript-development files and intermediate analyses. These will be cleaned, versioned, and moved into the structured layout before public release.
+
+## Model API Calls
+
+Default API-call scripts for the evaluated general-purpose model panel are provided in [`model_api_calls/`](model_api_calls/). Each model has a separate Python file and uses the same clinical prompt, CSV input format, and nine-field output schema:
+
+- 中医诊断
+- 辨证证型
+- 西医诊断
+- 治则
+- 处方名
+- 成分与克数
+- 付数
+- 用法
+- 医嘱
+
+The default input path is `data/benchmark_cases/60_clinical_cases.csv`, where each row is one patient case. API keys are read from environment variables only and are not stored in the repository.
 
 ## Planned Data Release
 
