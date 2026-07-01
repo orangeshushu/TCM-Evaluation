@@ -1,6 +1,6 @@
 # TCM-Evaluation
 
-This repository accompanies the manuscript:
+This repository accompanies the study:
 
 **Large Language Models Versus Physicians in Traditional Chinese Medicine: A Real-World Clinical Case Evaluation**
 
@@ -8,9 +8,9 @@ The project evaluates contemporary large language models (LLMs) against a physic
 
 ## Project Status
 
-This repository is being prepared for manuscript review. The full de-identified data package will be released after manuscript acceptance and before or at publication, in line with the data availability requirements for npj Digital Medicine and Nature Portfolio journals.
+This repository provides public-facing documentation, analysis-code structure, model API-call templates, and aggregate figure previews for a de-identified TCM clinical reasoning benchmark.
 
-At the current stage, this repository is intended to document the study design, analysis plan, and code structure. Patient-level case data, physician reports, LLM outputs, expert scoring records, and source data files are not yet public.
+Patient-level clinical text, physician reports, LLM outputs, expert scoring records, and source data files are not included in the current public repository. Any future data release will include only materials that have completed de-identification, privacy review, and documentation checks. Restricted elements, if any, will be described through metadata, aggregate summaries, or controlled-access instructions.
 
 ## Study Overview
 
@@ -59,11 +59,11 @@ The manuscript evaluates general-purpose and TCM-domain models available during 
 - Huatuo
 - BenCao
 
-Model names and versions will be finalized in the accepted manuscript and linked to their official references or technical reports.
+Model names and versions will be documented with their official references or technical reports where available.
 
 ## Repository Layout
 
-The public repository will be organized as follows after acceptance:
+The repository is organized to support documentation, model API examples, figures, and reproducible analysis resources. Additional cleaned data and code assets may be added through versioned releases as they become available.
 
 ```text
 TCM-Evaluation/
@@ -89,7 +89,7 @@ TCM-Evaluation/
     supplementary_figures/
 ```
 
-The current working directory contains manuscript-development files and intermediate analyses. These will be cleaned, versioned, and moved into the structured layout before public release.
+Development files and intermediate analyses are not included unless they are needed for public documentation or reproducibility.
 
 ## Model API Calls
 
@@ -107,9 +107,9 @@ Default API-call scripts for the evaluated general-purpose model panel are provi
 
 The default input path is `data/benchmark_cases/60_clinical_cases.csv`, where each row is one patient case. API keys are read from environment variables only and are not stored in the repository.
 
-## Planned Data Release
+## Data Release Scope
 
-After manuscript acceptance, we plan to release:
+Potential public research assets, subject to de-identification and privacy review, include:
 
 - De-identified benchmark case records.
 - Model-generated reports for all evaluated LLMs.
@@ -122,7 +122,7 @@ Files that contain protected health information, direct identifiers, or informat
 
 ## Results Snapshot
 
-The full results and source data will be released after manuscript acceptance. The preview figures below show aggregate analyses only and do not contain patient-level clinical text.
+The preview figures below show aggregate analyses only and do not contain patient-level clinical text.
 
 ### Expert score distributions
 
@@ -152,11 +152,11 @@ The current analysis scripts use Python with common scientific packages, includi
 
 ## Data and Code Availability
 
-See [DATA_AVAILABILITY.md](DATA_AVAILABILITY.md) for the planned data release, repository strategy, and manuscript-ready availability wording.
+See [DATA_AVAILABILITY.md](DATA_AVAILABILITY.md) for the data-release scope, privacy safeguards, and repository strategy.
 
 ## Citation
 
-The manuscript is currently under preparation/review. A formal citation, DOI, and dataset DOI will be added after acceptance.
+Formal citation details, DOI, and dataset DOI will be added when a citable version becomes available.
 
 ## Contact
 

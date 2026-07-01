@@ -1,16 +1,16 @@
-# Data Availability Plan
+# Data and Code Availability
 
-This document describes the planned data and code release for the TCM-Evaluation project.
+This document describes the data-release scope, privacy safeguards, and repository strategy for the TCM-Evaluation project.
 
-## Target Journal
+## Repository Scope
 
-The project is being prepared for submission to **npj Digital Medicine**. Nature Portfolio policy requires a Data Availability statement that makes the conditions of access to the minimum dataset needed to interpret, verify, and extend the research transparent to readers.
+This repository is intended to document the study design, analysis-code structure, model API-call templates, and aggregate figure outputs for a de-identified TCM clinical reasoning benchmark.
 
 ## Current Release Status
 
-The full dataset is not yet public because the manuscript is still under review/pre-publication preparation. The complete de-identified research package will be released after manuscript acceptance and before or at publication.
+The full patient-level research dataset is not included in the current public repository. Any future release will include only materials that have completed de-identification, privacy review, and documentation checks.
 
-This repository currently documents the study and will be used as the public project landing page.
+Direct identifiers and information that cannot be safely de-identified will not be released.
 
 ## Dataset Inventory
 
@@ -27,15 +27,15 @@ The planned public release will include:
 
 ## Access Route
 
-Planned route: **public repository release after manuscript acceptance**.
+Planned route: **versioned public release after privacy and documentation review**.
 
 The recommended release pattern is:
 
 1. Create a cleaned GitHub release for analysis code and lightweight source data.
 2. Deposit the full de-identified dataset in Zenodo, Figshare, OSF, or another stable repository that provides a DOI.
 3. Link the dataset DOI from this GitHub repository.
-4. Cite the dataset formally in the manuscript reference list or Data Availability section.
-5. Archive the accepted code release with the same version tag used for the manuscript.
+4. Cite the dataset formally in any related publications or reuse documentation.
+5. Archive the code release with the same version tag used for the dataset.
 
 ## Privacy and Restrictions
 
@@ -49,13 +49,13 @@ If any case-level information remains restricted after de-identification review,
 - the review criteria for requests, and
 - the available metadata or aggregate substitute.
 
-## Draft Manuscript Wording
+## Availability Wording
 
-Use this wording before the final repository DOI is available:
+Use this wording before a final repository DOI is available:
 
 ```text
 Data Availability
-The de-identified benchmark cases, model-generated reports, physician-generated reports, expert scoring data, scoring rubric, and source data underlying the figures will be made publicly available after manuscript acceptance and before or at publication in a versioned public repository. Direct identifiers and any information that cannot be safely de-identified will not be released. The final repository URL and persistent identifier will be added upon acceptance. The analysis code will be available at https://github.com/orangeshushu/TCM-Evaluation.
+The de-identified benchmark cases, model-generated reports, physician-generated reports, expert scoring data, scoring rubric, and source data underlying the figures will be made available in a versioned public repository after completion of privacy, de-identification, and documentation review. Direct identifiers and any information that cannot be safely de-identified will not be released. The final repository URL and persistent identifier will be added when available. The analysis code will be available at https://github.com/orangeshushu/TCM-Evaluation.
 ```
 
 Use this wording after the final repository DOI is available:
@@ -82,11 +82,11 @@ Before public release, add:
 - software environment and package versions,
 - reuse conditions and citation instructions.
 
-## Risk Flags to Resolve Before Acceptance
+## Release Checklist
 
 - Select the long-term dataset repository and license.
 - Confirm whether any case-level fields require controlled access.
 - Confirm whether physician-generated reports and expert scoring records can be fully released after de-identification.
 - Add a final dataset DOI and code archive DOI.
-- Replace provisional wording in the manuscript and README with final repository identifiers.
+- Replace provisional wording in repository documentation with final repository identifiers.
 
